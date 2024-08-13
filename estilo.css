@@ -1,3 +1,23 @@
 body{
     background-color: rgb(206, 58, 58);
+    display: grid;
+    justify-items: center;
+   
+}
+
+#contenedor-calculadora{
+    background-color: rgb(8, 10, 6);
+    
+    
+}
+#contenedor-calculadora > input{
+    width: 100px;
+    background-color: rgb(139, 142, 145);
+
+}
+#contenedor-opciones{
+    background-color: rgb(9, 17, 24);
+    display: grid;
+    justify-items: center;
+    
 }

@@ -6,18 +6,29 @@ body{
 }
 
 #contenedor-calculadora{
-    background-color: rgb(8, 10, 6);
-    
+    background-color: rgb(28, 29, 29);
+    width: 120px;
+    height: 90px;
     
 }
 #contenedor-calculadora > input{
-    width: 100px;
+    width: 98%;
     background-color: rgb(139, 142, 145);
-
+    border:1px solid rgb(11, 14, 13);
+    padding: 0px;
 }
 #contenedor-opciones{
-    background-color: rgb(9, 17, 24);
+    background-color: rgb(189, 194, 197);
     display: grid;
     justify-items: center;
+    padding: 10px;
+    border:1px solid rgb(11, 14, 13);
     
+}
+.fila> button{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border:1px solid rgb(27, 27, 26);
 }

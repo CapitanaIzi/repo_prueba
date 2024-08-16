@@ -33,3 +33,18 @@ body{
     border:1px solid rgb(27, 27, 26);
 
 }
+.operadores{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(104, 141, 141);
+}
+.operador-especial{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(223, 16, 16);
+
+}
+.borrados{
+    background-color: rgb(247, 99, 99);
+
+}

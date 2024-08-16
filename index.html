@@ -11,37 +11,38 @@
 <body>
     <h1>Calculadora</h1>
     <div id="contenedor-calculadora">
-        <input type="text" readonly>
+        <input type="text" readonly> 
         <div id="contenedor-opciones">
             <div class="fila">
-                <button onclick="actualizarVentana(this)">+</button>
-                <button onclick="actualizarVentana(this)">1</button>
-                <button onclick="actualizarVentana(this)">2</button>
-                <button onclick="actualizarVentana(this)">3</button>
+                <button onclick="borrarUltimo()"class="borrados">←</button>
+                <button onclick="actualizarVentana(this)"class="operadores">(</button>
+                <button onclick="actualizarVentana(this)"class="operadores">)</button>
+                <button onclick="actualizarVentana(this)" class="operadores">/</button>
             </div>
             <div class="fila">
-                <button onclick="actualizarVentana(this)">-</button>
-                <button onclick="actualizarVentana(this)">4</button>
-                <button onclick="actualizarVentana(this)">5</button>
-                <button onclick="actualizarVentana(this)">6</button>
-            </div>
-            <div class="fila">
-                <button onclick="actualizarVentana(this)">*</button>
                 <button onclick="actualizarVentana(this)">7</button>
                 <button onclick="actualizarVentana(this)">8</button>
                 <button onclick="actualizarVentana(this)">9</button>
+                <button onclick="actualizarVentana(this)"class="operadores" >*</button>
+            </div>
+            <div class="fila ">
+                <button onclick="actualizarVentana(this)">4</button>
+                <button onclick="actualizarVentana(this)">5</button>
+                <button onclick="actualizarVentana(this)">6</button>
+                <button onclick="actualizarVentana(this)"class="operadores" >-</button>
             </div>
             <div class="fila">
-                <button onclick="actualizarVentana(this)">/</button>
-                <button onclick="actualizarVentana(this)">0</button>
-                <button onclick="actualizarVentana(this)">.</button>
-                <button onclick="actualizarVentana(this)">=</button>
+                <button onclick="actualizarVentana(this)">1</button>
+                <button onclick="actualizarVentana(this)">2</button>
+                <button onclick="actualizarVentana(this)">3</button>
+                <button onclick="actualizarVentana(this)" class="operadores">+</button>
         </div>
         <div class="fila">
-            <button onclick="actualizarVentana(this)">%</button>
-            <button onclick="actualizarVentana(this)">(</button>
-            <button onclick="actualizarVentana(this)">)</button>
-            <button onclick="borrar()">C</button>
+            <button onclick="borrar()"class="borrados">C</button>
+            <button onclick="actualizarVentana(this)">0</button>
+            <button onclick="actualizarVentana(this)">.</button>
+            <button onclick="actualizarVentana(this)" class="operador-especial">=</button>
+           
         </div>
     </div>
     <script src="app.js"></script>

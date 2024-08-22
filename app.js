@@ -5,21 +5,28 @@ const OPCION_RESULTADO = "=";
 const OPCION_BORRAR_TODO = "C";
 const OPCION_BORRAR_ULTIMO = "←";
 const PANTALLA_VACIA = "";
+const OPERADORES = "+-*/%.";
+const NUMEROS = "0123456789←()";
 
 function actualizarVentana(boton) {
-    switch (boton.innerHTML) {
-        case OPCION_RESULTADO:
-            inputPantalla.value = eval(inputPantalla.value);
-            break;
-        case OPCION_BORRAR_TODO:
-            inputPantalla.value = PANTALLA_VACIA;
-            break;
-        case OPCION_BORRAR_ULTIMO:
-            inputPantalla.value = inputPantalla.value.slice(0, -1);
-            break;
-        default:
-            inputPantalla.value += boton.innerHTML;
-            break;
+    let ultimoCaracter = inputPantalla.value[inputPantalla.value.length - 1];
+    if (!OPERADORES.includes(ultimoCaracter) || NUMEROS.includes(boton.innerHTML)) {
+        switch (boton.innerHTML) {
+            case OPCION_RESULTADO:
+                inputPantalla.value = eval(inputPantalla.value);
+                break;
+            case OPCION_BORRAR_TODO:
+                inputPantalla.value = PANTALLA_VACIA;
+                break;
+            case OPCION_BORRAR_ULTIMO:
+                inputPantalla.value = inputPantalla.value.slice(0, -1);
+                break;
+            default:
+                inputPantalla.value += boton.innerHTML;
+                break;
+        }
+    } else {
+        alert("opcion no permitida")
     }
 
 }
